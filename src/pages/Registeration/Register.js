@@ -20,7 +20,7 @@ const Register = () => {
     }
 
     try {
-      const res = await axios.post("hrms-1vdf-qxkc6mncu-rahuls-projects-b2b19b41.vercel.app/register", formData);
+      const res = await axios.post("hrms-w617.vercel.app/register", formData);
       console.log("Registration successful:", res.data);
       navigate("/login");
     } catch (err) {
