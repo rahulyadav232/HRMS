@@ -29,7 +29,7 @@ const Login = () => {
     if (!validateForm()) return;
 
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/login", formData, { withCredentials: true });
+      const res = await axios.post("hrms-1vdf-qxkc6mncu-rahuls-projects-b2b19b41.vercel.app/login", formData, { withCredentials: true });
       console.log("Login successful:", res.data);
       navigate("/dashboard");
     } catch (err) {
