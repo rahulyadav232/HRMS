@@ -31,7 +31,9 @@ connect()
     console.error("❌ Database connection failed:", err);
     process.exit(1);
   });
-
+app.get("/", (req, res) => {
+  res.send("🚀 Backend is running successfully!");
+});
 
 app.use('/api/auth', authRoutes);
 app.use("/api/candidates", candidateRoutes);
