@@ -14,7 +14,7 @@ const app = express();
 // app.use(cors());
 // app.use(cors({ origin: "http://localhost:3000", credentials: true }));
 app.use(cors({
-  origin: ["hrms-1vdf-qxkc6mncu-rahuls-projects-b2b19b41.vercel.app"], // Replace with your frontend domain
+  origin: ["hrms-w617.vercel.app"], // Replace with your frontend domain
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
