@@ -14,9 +14,13 @@ const app = express();
 // app.use(cors());
 // app.use(cors({ origin: "http://localhost:3000", credentials: true }));
 app.use(cors({
-  origin: ["https://your-frontend.vercel.app"], // Allow requests from your frontend
-  methods: ["GET", "POST", "PUT", "DELETE], // Allowed methods
-  credentials: true // Allow cookies (if needed)
+  origin: [
+    "https://your-frontend.vercel.app",  // ✅ Deployed frontend on Vercel
+    "http://localhost:3000"  // ✅ Local development frontend
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"], // ✅ Correct syntax
+  credentials: true, // ✅ Allows cookies & authentication headers
+  allowedHeaders: ["Content-Type", "Authorization"], // ✅ Allows custom headers
 }));
 app.use(express.json());
 app.use(cookieParser());
