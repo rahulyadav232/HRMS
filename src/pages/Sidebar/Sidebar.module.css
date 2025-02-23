@@ -1,0 +1,78 @@
+Sidebar Container
+.sidebar {
+  width: 250px;
+  background-color: #ffffff;
+  border-right: 1px solid #e0e0e0;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Logo */
+.logo2 {
+  font-weight: 700;
+  color: #4B0082;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+/* Search Input */
+.searchInput {
+  margin-top: 35px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Section Titles */
+.sidebarMenuTitle {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #909090;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Sidebar Menu */
+.sidebarMenu {
+  margin-top: 8px;
+}
+
+.sidebarMenu a {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  font-size: 15px;
+  color: #4a4a4a;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.sidebarMenu a:hover {
+  background-color: #f3f2ff;
+  color: #4B0082;
+}
+
+.activeMenu {
+  background-color: #e9e4ff;
+  font-weight: 600;
+  color: #4B0082;
+}
+
+/* Sidebar Icons */
+.sidebarMenu a svg {
+  margin-right: 10px;
+  font-size: 20px;
+  color: inherit;
+}
+
+/* Logout */
+.logout {
+  color: #e63946;
+}
+
+.logout:hover {
+  background-color: #e63946;
+}
