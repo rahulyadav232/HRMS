@@ -28,7 +28,7 @@ const Dashboard = () => {
   const [candidates, setCandidates] = useState([]);
 
   useEffect(() => {
-    fetch("hrms-1vdf-qxkc6mncu-rahuls-projects-b2b19b41.vercel.app/candidates")
+    fetch("hrms-w617.vercel.app/candidates")
       .then((res) => res.json())
       .then((data) => setCandidates(data))
       .catch((err) => console.error("Error fetching candidates:", err));
